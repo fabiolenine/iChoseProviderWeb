@@ -1,0 +1,10 @@
+body{
+	padding-top:250px;
+}
+
+.form-group{
+    border-style:solid;
+    border-width:1px;
+    width:50%;
+	margin:0 auto;
+}
