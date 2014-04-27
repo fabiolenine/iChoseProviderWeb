@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html ng-app>
     <head>
-		
+		<script src="http://code.jquery.com/jquery-2.0.2.min.js"></script>
+
 		<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.0-beta.2/angular.min.js"></script>
         <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
         <script src="js/loginController.js"></script>
+        <script src="js/login.js"></script>
         
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -30,18 +32,23 @@
 			<div class="span1">
 				<form class="form-signin">
 					<h1 class="form-signin-heading text-muted">Inicie o iChose</h1>
-					<input type="text" class="form-control" placeholder="endereço de email" required="" autofocus="">
-					<input type="password" class="form-control" placeholder="senha" required="">
+					<input type="email" id="user.cdUser" class="form-control" placeholder="endereço de email" required="" autofocus="" >
+					<input type="password" id="user.deSenha" class="form-control" placeholder="senha" required="">
 
-					<a href="http://www.google.com.br">esqueci a senha</a>
+					<a href="http://www.google.com.br" id="lembrarSenha">esqueci a senha</a>
 
 					<label class="checkbox">
 					    <input type="checkbox"> <span id="lembre" >Lembre-se de mim </span>
 					</label>
+					
+					<button id="btSubmit" class="btn btn-lg btn-primary btn-block" type="submit" disabled="disabled" >Acessar</button>
 
-					<button class="btn btn-lg btn-primary btn-block" type="submit">
-					Acessar
-					</button>
+					<div class="alert alert-warning alert-dismissable" id="sucessAlert" >
+						<button class="close" data-dismiss="alert" >&times;</button>
+
+						<strong>Atenção!</strong> O seu email não é válido, por favor digite um email válido.	
+					</div>
+
 				</form>
 			</div>
 		</div>
