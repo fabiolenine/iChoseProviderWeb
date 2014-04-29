@@ -2,7 +2,7 @@
     padding-top: 120px;
     padding-bottom: 40px;
     background-color: #eee;
-  
+    position: absolute;
   }
   .btn 
   {
@@ -21,21 +21,21 @@
    -moz-outline:0;
   }
   .fullscreen_bg {
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
     background-size: cover;
     background-position: 50% 50%;
-    background-image: url(../img/fotos/bg_top.jpg);
+    background-image: url(https://s3-us-west-2.amazonaws.com/ichose/site/hotsite/bg_top.jpg);
     background-repeat:repeat;
   }
   .form-signin {
-    max-width: 280px;
-    padding: 15px;
-    margin: 0 auto;
-    margin-top:50px;
+    max-width:  280px;
+    padding:    15px;
+    margin:     0 auto;
+    margin-top: 10px;
   }
   .form-signin .form-signin-heading, .form-signin {
     margin-bottom: 10px;
