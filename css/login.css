@@ -1,5 +1,5 @@
   body {
-    padding-top: 120px;
+    padding-top: 12px;
     padding-bottom: 40px;
     background-color: #eee;
     position: absolute;
@@ -80,7 +80,7 @@
     text-shadow: 0 2px 2px rgba(0,0,0,0.5);
   }
 
-  #endereco {
+  #endereco, #redesocial {
     color: white;
   }
 
@@ -89,7 +89,7 @@
   }
 
   img {
-    padding-top: 60px;
+    padding-top: 10px;
   }
 
   .alert {
