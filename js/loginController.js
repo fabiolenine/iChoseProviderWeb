@@ -1,5 +1,5 @@
 function LoginController($scope) {
     $scope.salvar = function() {
-        alert("Seu nome de usu·rio È:" + $scope.nmUsuario);
+        alert("Seu nome de usu√°rio √©:" + $scope.nmUsuario);
     };
 }
