@@ -38,6 +38,11 @@
     			</div>
             </div>		 	
 			<div class="row-fluid clearfix">
+                <!-- show any messages that come back with authentication -->
+	<% if (message.length > 0) { %>
+		<div class="alert alert-danger"><%= message %></div>
+	<% } %>
+
 			    <div class="col-md-12 column" id="glass">
 			 		<br>
                     <p class="text-center">
