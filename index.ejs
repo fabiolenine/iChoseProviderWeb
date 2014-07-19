@@ -10,9 +10,10 @@
     	<meta name="keywords" content="ichose, provider, baladas, eventos, festas, shows, comanda, digital, danceteria, software, balcão"/>
     	<meta name="author" content="Fabio Lenine, Jadson Mezzari, Jesualdo Pinheiro and Lucas Assis."/>
 
-        <link rel="stylesheet" type="text/css"  href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" />
-        <link rel="stylesheet" type="text/css"  href="https://s3-us-west-2.amazonaws.com/ichose/site/hotsite/css/normalize.min.css" >
-        <link rel="stylesheet" type="text/css"  href="https://s3-us-west-2.amazonaws.com/ichose/site/provider/css/login.css" />
+        <link rel="stylesheet" type="text/css"  href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css"  href="https://s3-us-west-2.amazonaws.com/ichose/site/hotsite/css/normalize.min.css">
+        <link rel="stylesheet" type="text/css"  href="https://s3-us-west-2.amazonaws.com/ichose/site/provider/css/login.css">
+        <link rel="stylesheet"  type="text/css" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
         <title>Tela de acesso iChose Provider</title>
     </head>
     <body>
@@ -82,12 +83,14 @@
 				<!--	Login
 						=====	-->
 				<div class="col-md-4 column" id="glass">
-					<form class="form-signin">
+					<form action="/login" 
+                          method="post" 
+                          class="form-signin">
 						<h1 class="form-signin-heading text-muted">Inicie o iChose</h1>
 						<input type="email" id="user.cdUser" class="form-control" placeholder="endereço de email" required="" autofocus="" >
 						<input type="password" id="user.deSenha" class="form-control" placeholder="senha" required="">
 
-						<a href="http://www.google.com.br" id="lembrarSenha">esqueci a senha</a>
+						<a href="/forgot" id="lembrarSenha">esqueci a senha</a>
 
 						<label class="checkbox">
 						    <input type="checkbox">
